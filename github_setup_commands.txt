@@ -1,0 +1,35 @@
+# GitHub Repository Setup Commands
+
+## Step 1: Create GitHub Repository
+1. Go to https://github.com and sign in
+2. Click the green "New" button (or "+" in top right)
+3. Repository name: door-unlocker-web-app
+4. Make it PUBLIC (required for free GitHub Pages)
+5. DON'T check "Add a README file" 
+6. Click "Create repository"
+
+## Step 2: Run These Commands in PowerShell (NOT on GitHub website)
+After creating your GitHub repository, run these commands in YOUR LOCAL POWERSHELL:
+
+```powershell
+# Navigate to your project folder (if not already there)
+cd "c:\Users\jerem\Documents\Flutter Projects\constructionimagetaker\DoorUnlockerSmartKeyApp\doorunlockersmartkeyapp"
+
+# Add GitHub as remote origin (replace YOUR-USERNAME with your actual GitHub username)
+git remote add origin https://github.com/[YOUR-USERNAME]/door-unlocker-web-app.git
+
+# Push code to GitHub
+git push -u origin main
+```
+
+## Step 3: Enable GitHub Pages
+1. Go back to your repository on GitHub
+2. Click "Settings" tab
+3. Scroll to "Pages" in the left sidebar
+4. Under "Source" select "GitHub Actions"
+5. Your app will automatically deploy!
+
+## Your app will be live at:
+https://[YOUR-USERNAME].github.io/door-unlocker-web-app/
+
+## Replace [YOUR-USERNAME] with your actual GitHub username
